@@ -1,4 +1,4 @@
-# Habit Tracker 🏃‍♀️🚶‍♂️🏃‍♂️🏃‍♀️🏃‍🏋️‍♀️🏋️‍♂️ Project 🚀
+# Basic Banking System Project 🏦
  
 ## ⭐ Introduction
 
@@ -7,42 +7,25 @@ This is a Habit Tracker  Project which is built using Nodejs, Ejs ,CSS, Javascri
 <br/>
 
 ## Features
--Add multiple habits to track like reading a book, going to the gym etc
--Track each habit everyday. 
--✔️ Mark the habit as done for a day
--❌ Mark the habit as not done for a day
--➖ User did not take any action on a habit for a day
--A view to show all current habits. Here give an add button where you can add a new habit to track
--A view to display 7 days of each habit
--Show today where user can mark todays habit
--A user can toggle between the three (above mentioned) statuses of a habit i.e. I can change today’s status as done, not done or none anytime.
+-A Basic banking system application with features for adding, withdrawing, and transferring money between customers.Dummy data Detch from Database.
 
 <br/>
 <br/>
 .
-## Available Scripts
-In the project directory, you can run:
 
-### `npm start`
-Runs the app in the development mode.\
-Open [http://localhost:7500](http://localhost:7500) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-<br/>
-<br/>
 
 ## Packages Install
 -body-parser <br/>
 -dotenv<br/>
 -ejs<br/>
+-multer<br/>
 -express<br/>
 -mongoose<br/>
 -nodemon<br/>
 
 ## 🔗 Links
 
-> ## Checkout the website link : https://ajay-habit.onrender.com/
+> ## Checkout the website link : https://banking-system-website.onrender.com/
 
 
 <br/>
@@ -51,9 +34,17 @@ You may also see any lint errors in the console.
 ## 💻 Screens
 
 
-### Add Habit
+### Home Page
 
-![Screenshot (79)](https://user-images.githubusercontent.com/102378038/210126622-5618726d-9384-4edc-9600-532f048459f3.png)
+![Screenshot (222)](https://user-images.githubusercontent.com/102378038/226185958-448f6c1a-a18f-4efc-bd96-a493cdf6a80f.png)
 
+### Customer Page
 
+![Screenshot (223)](https://user-images.githubusercontent.com/102378038/226185989-e7a164b7-e8e4-4182-bcd1-69157655e71e.png)
 
+### Customer Detail Page
+
+![Screenshot (224)](https://user-images.githubusercontent.com/102378038/226186022-16a98b12-dbba-4bf3-8ef8-f3bab2750a9c.png)
+### Customer Transaction
+
+![Screenshot (225)](https://user-images.githubusercontent.com/102378038/226186052-959a0377-6140-4aab-abcc-5738827ab2df.png)
