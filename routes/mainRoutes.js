@@ -5,23 +5,22 @@ const Habit = require('../models/habitModel')
 // **********************************  Habits Get From Database   *********************************//
 router.get('/', (req, resp) => {
     
-    Habit.find(
-        (err, habit) => {
-            if (err) console.log(err);
-            else {
-                var days = [];
-                days.push(getD(0));
-                days.push(getD(1));
-                days.push(getD(2));
-                days.push(getD(3));
-                days.push(getD(4));
-                days.push(getD(5));
-                days.push(getD(6));
-                resp.render('habit', { habit, days })
-            }
+Habit.find().select('-updatedAt -createdAt -__v').sort({ _id: -1 })
+    .then(habits => {
+        var days = [];
+        days.push(getD(0));
+        days.push(getD(1));
+        days.push(getD(2));
+        days.push(getD(3));
+        days.push(getD(4));
+        days.push(getD(5));
+        days.push(getD(6));
+        resp.render('habit', { habit: habits, days });
+    })
+    .catch(err => {
+        console.log(err);
+    });
 
-        }).select('-updatedAt -createdAt -__v')
-        .sort({ _id: -1 });
    
 })
 //************************   Find the Date and Return the string Date  **************************//
