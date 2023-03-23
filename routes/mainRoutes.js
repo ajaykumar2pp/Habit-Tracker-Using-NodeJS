@@ -99,11 +99,8 @@ router.post('/habit',  async(req, resp) => {
 router.get("/habitStatus", (req, resp) => {
     var d = req.query.date;
     var id = req.query.id;
-    Habit.findById(id, (err, habit) => {
-        if (err) {
-            console.log("Habit staus Not update")
-        }
-        else {
+    Habit.findById(id)
+        .then(habit => {
             let dates = habit.dates;
             let found = false;
             dates.find(function (item, index) {
@@ -124,17 +121,18 @@ router.get("/habitStatus", (req, resp) => {
                 dates.push({ date: d, complete: 'yes' })
             }
             habit.dates = dates;
-            habit.save()
-            
-                .then(habit => {
-                    console.log(habit);
-                    resp.redirect('back');
-                })
-                .catch(err => console.log(err));
-        }
-    })
+            return habit.save();
+        })
+        .then(updatedHabit => {
+            console.log(updatedHabit);
+            resp.redirect('back');
+        })
+        .catch(err => {
+            console.log("Habit status not updated", err);
+            resp.status(500).send("Error updating habit status");
+        });
+});
 
-})
 //*************************   Delete  Habit        ***************************//
 router.get("/:id", async (req, resp) => {
     const documentProduct = await Habit.findOneAndRemove({ _id: req.params.id });
