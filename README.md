@@ -1,23 +1,21 @@
-# Habit Tracker 
- 
+# 🌟 Habit Tracker
+
 ## ⭐ Introduction
-
-This is a Habit Tracker  Project which is built using Nodejs, Ejs ,CSS, Javascript , Bootstrap. It is responsive across all devices.
-<br/>
-<br/>
-
-## Features
--Add Habit <br/>
--Each Habit Track Weekly<br/>
+This is a Habit Tracker project built using Node.js, EJS, CSS, JavaScript, and Bootstrap. It is responsive across all devices.
 
 <br/>
+
+## 🛠️ Features
+- ➕ Add Habit<br/>
+- 📅 Track Each Habit Weekly<br/>
+
 <br/>
 
-## Packages Install
--ejs<br/>
--multer<br/>
--express<br/>
--mongoose<br/>
+## 📦 Packages to Install
+- `ejs`
+- `express`
+
+
 
 ## 🔗 Links
 
