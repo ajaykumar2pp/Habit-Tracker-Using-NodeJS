@@ -14,13 +14,10 @@ This is a Habit Tracker  Project which is built using Nodejs, Ejs ,CSS, Javascri
 <br/>
 
 ## Packages Install
--body-parser <br/>
--dotenv<br/>
 -ejs<br/>
 -multer<br/>
 -express<br/>
 -mongoose<br/>
--nodemon<br/>
 
 ## 🔗 Links
 
