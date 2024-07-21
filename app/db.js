@@ -1,12 +1,12 @@
 require('dotenv').config()
 const mongoose = require('mongoose');
 
-exports.connectMonggose =()=>{
-    mongoose.set("strictQuery", false);
-    mongoose.connect(process.env.DATABASE_URL,
-    {
-        useNewUrlParser: true
+exports.connectMonggose = () => {
+    mongoose.connect(process.env.DATABASE_URL)
+    .then(() => {
+        console.log("Connected to Mongodb => Habit-Tracker");
     })
-    .then((e)=>console.log("Connected to Mongodb => Habit-Tracker"))
-    .catch((e)=>console.log("Not Connect Mongodb"))
+    .catch((error) => {
+        console.error("Failed to connect to MongoDB:", error.message);
+    });
 }

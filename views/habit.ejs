@@ -5,12 +5,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/svg+xml" href="https://example.com/image.svg">
+    <link rel="icon" type="image/svg+xml" href="/Images/habit-logo-Track.jpg">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <title>Habit tracker</title>
 </head>
@@ -20,7 +20,7 @@
     <!--*************************************** Heading ***************************** -->
     <div class="">
     
-        <h1 class="text-center mt-3 " style="color: rgb(89, 110, 97);">    <img src="/assets/Images/habit-logo-Track.jpg" alt="cross" width="70" height="70" class=" rounded-circle me-3">Habit  Tracker </h1>
+        <h1 class="text-center mt-3 " style="color: rgb(89, 110, 97);">    <img src="/Images/habit-logo-Track.jpg" alt="cross" width="70" height="70" class=" rounded-circle me-3">Habit  Tracker </h1>
     </div>
    
 
@@ -123,13 +123,13 @@
                                                 <td class=" pb-3">
                                                     <a href="habitStatus/?id=<%= habits._id %>&date=<%= day.date %>">
                                                         <% if(found && status==='yes' ){ %>
-                                                            <img src="/assets/Images/check-removebg.png" alt="check"
+                                                            <img src="/Images/check-removebg.png" alt="check"
                                                                 width="30" height="30" class="ms-3">
                                                             <% } else if(found && status==='no' ){ %>
-                                                                <img src="/assets/Images/cross-removebg.png" alt="cross"
+                                                                <img src="/Images/cross-removebg.png" alt="cross"
                                                                     width="40" height="30" class=" ms-3">
                                                                 <% } else { %>
-                                                                    <img src="/assets/Images/minus2-removebg.png" alt="minus"
+                                                                    <img src="/Images/minus2-removebg.png" alt="minus"
                                                                         width="30" height="30" class=" ms-3 bg-light">
                                                                     <% } %>
                                                     </a>
